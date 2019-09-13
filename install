@@ -1,0 +1,11 @@
+
+echo " Youtube-dl v1.0 •• Unknown240 " | lolcat
+echo " "
+
+apt-get install youtube-dl
+apt-get install python
+pip install youtube-dl
+chmod a+rx youtube-dl
+youtube-dl -U
+apt-get install ffmpeg
+

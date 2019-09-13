@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo " Do You download with formats? /  Mau Download dengan formats? (y) " | lolcat
+echo " "
+
+read menu
+if [ $menu = y ]
+then
+echo " "
+echo " # Usage / Cara Pakai " | lolcat
+echo " ketik format kode + Url video " | lolcat
+echo " Input Code + Url " | lolcat
+echo " example : 69 https://youtu.be/60ItHLz5WEA " | lolcat
+echo " input "
+read x
+youtube-dl -f $x
+fi

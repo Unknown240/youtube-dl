@@ -1,0 +1,46 @@
+#!/bin/bash
+clear
+echo " 
+╦ ╦┌─┐┬ ┬┌┬┐┬ ┬┌┐ ┌─┐ ┌┬┐┬  
+╚╦╝│ ││ │ │ │ │├┴┐├┤───│││  
+ ╩ └─┘└─┘ ┴ └─┘└─┘└─┘ ─┴┘┴─┘ v1.0 " | lolcat
+echo " •• @unknown240 •• " | lolcat
+echo " "
+
+echo "1• Download video "
+echo "2• Only audio (.mp3)"
+echo "3• Check available video formats"
+echo " "
+echo " Choice "
+
+read varrm
+if [ $varrm = 1 ]
+then
+cd video
+echo " Input Url " | lolcat
+read video
+youtube-dl $video
+cd ..
+fi
+
+if [ $varrm = 2 ]
+then
+cd music
+echo " Input Url " | lolcat
+read audio
+https://youtu.be/reuYXbHOc1c $audio
+cd ..
+fi
+
+if [ $varrm = 3 ]
+then
+echo " NOTED : " | lolcat
+echo "[~!!~] Beberapa format video tidak mendukung audio"
+echo "[~!!~] Some video formats do not support audio"
+echo " "
+echo " Input URL for Check" | lolcat
+read url
+youtube-dl -F $url
+bash .run
+fi
+
