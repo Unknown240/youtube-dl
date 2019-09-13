@@ -7,5 +7,7 @@ apt-get install python
 pip install youtube-dl
 chmod a+rx youtube-dl
 youtube-dl -U
+mkdir video
+mkdir music
 apt-get install ffmpeg
 
