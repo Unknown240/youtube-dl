@@ -3,7 +3,7 @@ clear
 echo " 
 ╦ ╦┌─┐┬ ┬┌┬┐┬ ┬┌┐ ┌─┐ ┌┬┐┬  
 ╚╦╝│ ││ │ │ │ │├┴┐├┤───│││  
- ╩ └─┘└─┘ ┴ └─┘└─┘└─┘ ─┴┘┴─┘ v1.0 " | lolcat
+ ╩ └─┘└─┘ ┴ └─┘└─┘└─┘ ─┴┘┴─┘ v1.1 " | lolcat
 echo " •• @unknown240 •• " | lolcat
 echo " "
 
@@ -28,7 +28,7 @@ then
 cd music
 echo " Input Url " | lolcat
 read audio
-https://youtu.be/reuYXbHOc1c $audio
+youtube-dl -x --audio-format mp3 $audio
 cd ..
 fi
 
